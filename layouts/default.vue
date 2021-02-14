@@ -23,13 +23,13 @@ export default defineComponent({
       {
         icon: 'mdi-apps',
         title: 'Welcome',
-        to: '/'
+        to: '/',
       },
       {
         icon: 'mdi-chart-bubble',
         title: 'Inspire',
-        to: '/inspire'
-      }
+        to: '/inspire',
+      },
     ])
     const miniVariant = ref(false)
     const right = ref(false)
@@ -45,9 +45,9 @@ export default defineComponent({
       miniVariant,
       right,
       rightDrawer,
-      title
+      title,
     }
-  }
+  },
 })
 </script>
 <style>
