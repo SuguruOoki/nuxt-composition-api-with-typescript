@@ -1,4 +1,8 @@
-# nuxt-compostion-api-with-typescript
+# nuxt-composition-api-with-typescript
+
+## deployed app
+
+https://nuxt-ssr-composition-app.herokuapp.com/
 
 ## Build Setup
 
