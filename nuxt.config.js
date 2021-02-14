@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'nuxt-compostion-api-with-typescript',
+    title: 'nuxt-composition-api-with-typescript',
     htmlAttrs: {
       lang: 'en',
     },
@@ -12,6 +12,7 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
+  telemetry: false,
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [],
