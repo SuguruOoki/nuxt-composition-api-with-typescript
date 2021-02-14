@@ -1,4 +1,7 @@
-export default {
+
+import { Configuration } from '@nuxt/types'
+
+const nuxtConfig: Configuration = {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'nuxt-composition-api-with-typescript',
@@ -39,3 +42,5 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
 }
+
+module.exports = nuxtConfig
