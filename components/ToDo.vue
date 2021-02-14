@@ -1,12 +1,12 @@
 <template>
-<div>
-  <p>{{ state.messageTwo }}</p>
-  <div v-for="item in items" :key="item.id" class="flex">
-    <p>{{ item.title }}</p>
-    <p>{{ item.description }}</p>
-    <p>{{ item.isFinished }}</p>
+  <div>
+    <p>{{ state.messageTwo }}</p>
+    <div v-for="item in items" :key="item.id" class="flex">
+      <p>{{ item.title }}</p>
+      <p>{{ item.description }}</p>
+      <p>{{ item.isFinished }}</p>
+    </div>
   </div>
-</div>
 </template>
 
 <script lang="ts">
@@ -24,29 +24,29 @@ export default defineComponent({
       {
         title: 'Welcome',
         description: 'descriptionTest1',
-        isFinished: false
+        isFinished: false,
       },
       {
         title: 'Welcome2',
         description: 'descriptionTest2',
-        isFinished: true
+        isFinished: true,
       },
       {
         title: 'Welcome3',
         description: 'descriptionTest3',
-        isFinished: true
+        isFinished: true,
       },
     ])
     const state = reactive<{ messageOne: string }>({
-      messageOne: "Hello"
-    });
-    const messageTwo = ref<string>("こんにちは");
+      messageOne: 'Hello',
+    })
+    const messageTwo = ref<string>('こんにちは')
 
     return {
       state,
       messageTwo,
-      items
-    };
+      items,
+    }
   },
 })
 </script>
