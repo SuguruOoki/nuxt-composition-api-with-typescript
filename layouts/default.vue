@@ -4,6 +4,52 @@
   </div>
 </template>
 
+<script lang="ts">
+import { defineComponent, ref } from '@vue/composition-api'
+
+type Item = {
+  icon: string
+  title: string
+  to: string
+}
+
+export default defineComponent({
+  setup() {
+    // refを使ったリアクティブ値の生成
+    const clipped = ref(false)
+    const drawer = ref(false)
+    const fixed = ref(false)
+    const items = ref<Item[]>([
+      {
+        icon: 'mdi-apps',
+        title: 'Welcome',
+        to: '/'
+      },
+      {
+        icon: 'mdi-chart-bubble',
+        title: 'Inspire',
+        to: '/inspire'
+      }
+    ])
+    const miniVariant = ref(false)
+    const right = ref(false)
+    const rightDrawer = ref(false)
+    const title = ref('Vuetify.js')
+
+    // (5) Template内で使うものだけまとめて返す
+    return {
+      clipped,
+      drawer,
+      fixed,
+      items,
+      miniVariant,
+      right,
+      rightDrawer,
+      title
+    }
+  }
+})
+</script>
 <style>
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
