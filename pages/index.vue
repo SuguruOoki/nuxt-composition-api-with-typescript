@@ -8,9 +8,9 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
+import { defineComponent, ref, reactive } from '@vue/composition-api'
 
-export default Vue.extend({})
+export default defineComponent({})
 </script>
 
 <style>
